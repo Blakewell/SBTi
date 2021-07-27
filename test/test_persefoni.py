@@ -29,7 +29,7 @@ class TestTemperatureScore(unittest.TestCase):
         self.companies = SBTi.utils.dataframe_to_portfolio(self.portfolio)
 
         time_frames = [ETimeFrames.MID]
-        scopes = [EScope.S1S2S3, EScope.S1S2, EScope.S3]
+        scopes = [EScope.S3]
         fallback_score = 1.5
 
         self.temperature_score = TemperatureScore(
